@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contenedor__todo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#loginMessage,
+#registerMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    display: none;
+    /* Inicialmente oculto */
+}
+
+#loginMessage.success,
+#registerMessage.success {
+    color: green;
+    display: block;
+}
+
+#loginMessage.error,
+#registerMessage.error {
+    color: red;
+    display: block;
+}
+
+.caja__trasera {
+    display: none;
+}
+
+.contenedor__login-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
